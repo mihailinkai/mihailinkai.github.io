@@ -1010,7 +1010,7 @@ ul {
 	
 	height: 250px;
 	background: linear-gradient(45deg, rgba(103, 0, 31, .1), rgba(34, 101, 163, .1)),
-		url(img/photo2.png) no-repeat 50% 50%;"
+		url(../img/photo2.png) no-repeat 50% 50%;"
 }
 
 .slides {
