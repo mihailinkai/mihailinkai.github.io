@@ -993,30 +993,43 @@ ul {
 */
 
 .fr-slide {
-	height: 250px;
-	background: linear-gradient(45deg, rgba(103, 0, 31, .1), rgba(34, 101, 163, .1)), url(12.png) no-repeat 50% 50%;
+	height: ;
+	background-image:url("photo1.jpg");
 	
 }
 .sc-slide {height: 250px; 
-	background: linear-gradient(45deg, rgba(103, 0, 31, .1), rgba(34, 101, 163, .1)), 
-		
-	
-	url(airforce.jpg) no-repeat 50% 50%;"
+	background-image: url(photo1.png) 50% 50%;
 	
 }
 
 .th-slide {
-	height: 250px; background:linear-gradient(45deg, rgba(103, 0, 31, .1), rgba(34, 101, 163, .1)), url(beautiful_website-002.jpg) no-repeat 50% 50%;">
+	height: 250px; background:linear-gradient(45deg, rgba(103, 0, 31, .1), rgba(34, 101, 163, .1)), url(photo1.png) repeat;">
 }
 
 .forth-slide {
 	
 	height: 250px;
 	background: linear-gradient(45deg, rgba(103, 0, 31, .1), rgba(34, 101, 163, .1)),
-		url(beautiful_website-002.jpg) no-repeat 50% 50%;"
+		url(img/photo2.png) no-repeat 50% 50%;"
 }
 
+.slides {
+	
+	height: 250px;
+	background: ;
+	
+}
 
+.slides img {
+	
+	margin:  auto 0;
+	width: 500px;
+	height: auto;
+	margin-right: 100px;
+	position: absolute;
+	top: ;
+	right: 300px;
+}
 
 
 
