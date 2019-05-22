@@ -26,6 +26,25 @@
 	
 }
 
+body {
+	
+	display: grid;
+	grid-template-columns: 300px;
+	grid-template-rows: 100px 50px 50px 50px 50px 50px;
+	grid-template-areas: 
+		"row-1"
+		"row-2"
+		"row-3"
+		"row-4"
+		"row-5"
+		"row-6"
+}
+
+header {
+	
+	grid-area: "row-1"
+		
+}
 .wrapper-about {
 	
 	display:grid;

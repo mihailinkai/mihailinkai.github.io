@@ -1,210 +1,200 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Мой сайт-резюме</title>
-	
-	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-<!--     выравнивает все стили в браузере нормализация она всегда вверху первая-->
-	
-	<!--  СТИЛИ -->
-	
+
+	<!--     выравнивает все стили в браузере нормализация она всегда вверху первая-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
+
+	<!--  МОИ СТИЛИ -->
 	<link rel="stylesheet" href="css/main.css" type="text/css">
-	
-	
+
+
 	<!-- ШРИФТЫ-->
-	 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	 
-	 <!-- MEDIA -->
-	 <link rel="stylesheet" href="css/media.css" media="all and (max-width:1140px)" type="text/css">
-	 
-<!--	  для вставки иконок -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+	<!-- MEDIA -->
+	<link rel="stylesheet" href="css/media.css" media="all and (max-width:1140px)" type="text/css">
+
+	<!--	  для вставки иконок -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	
+
 	<!-- bootstrap для иконок-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	 
-<!--	 	<meta name="viewport" content="width=device-width, initial-scale=1">-->
-<!--	чтобы виделось на всех устройствах-->
 
+	<!--	 	<meta name="viewport" content="width=device-width, initial-scale=1">-->
+	<!--	чтобы виделось на всех устройствах-->
 
-
-
-	
- 
- 
- 
- 
- 
-	 
 </head>
+
 <body link="#e6c2de">
 
-	
-	
 	<!-- ......
 	HEADER
 	.......-->
- <header>
-   
-    <h1>Михайлина Изгарева</h1>
-    <h2>Junior Frontend Developer</h2>
- 
-<!--.......
-NAVIGATION
-........-->
+	<header>
 
- <nav>
- <input type="checkbox" name="menu" id="btn-menu">
- <label for="btn-menu">MENU</label>
-  <ul>
-  <li><a href="#about-me">обо мне</a></li>
-  <li><a href="#skills">Навыки</a></li>
-  <li><a href="contacts">чёто ещё</a></li>
-  <li><a href="#">чёто ещё</a></li>
-  <li><a href="#">чёто ещё</a></li>
-</ul>
-	   </nav>
+		<h1>Михайлина Изгарева</h1>
+		<h2>Junior Frontend Developer</h2>
+
+
+		<!--NAVIGATION-->
+		<nav>
+			<input type="checkbox" name="menu" id="btn-menu">
+			<label for="btn-menu">MENU</label>
+			<ul>
+				<li><a href="#about-me">Обо мне</a></li>
+				<li><a href="#skills">Навыки</a></li>
+				<li><a href="#add">Факты</a></li>
+				<li><a href="#projects">Проекты</a></li>
+				<li><a href="#footer-page">Контакты</a></li>
+			</ul>
+		</nav>
 
 	</header>
-  
-  <!--........
-  HEADER END
-  ........-->
-	  
-	
+
+
 	<!--......
-	MAIN
+	MAIN about me
 	......-->
-	
+
 	<section class="about-contacts">
-	
+
 		<div class="wrapper-about">
-  <div class="contacts">
-   <div id="about-me">про меня</div>
-   
-	 <div id="contacts"> </div>
-		<div><img src="https://img.icons8.com/dotty/20/000000/birthday-cake.png"> 14/03/1992</div>
-  <div>  <img src="https://img.icons8.com/ios/20/000000/phone.png"> <a href="tel:+79289031281">89289031281</a></div>
-	  <div>  <img src="https://img.icons8.com/ios/20/000000/email.png"> <a href="misha.izgareva@gmail.com">misha.izgareva@gmail.com</a></div>
-  </div>
-	
-  
- 
-  
-  <!--				кнопка скачать резюме	-->
-					<div class="download">
-   <div> <a href="%D0%A0%D0%B5%D0%B7%D1%8E%D0%BC%D0%B5_%D0%98%D0%B7%D0%B3%D0%B0%D1%80%D0%B5%D0%B2%D0%B0_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%B8%D0%BD%D0%B0%20%D0%A0%D0%BE%D1%81%D1%82%D0%BE%D0%B2-%D0%BD%D0%B0-%D0%94%D0%BE%D0%BD%D1%83.pdf" target="_blank">
-      <i class="fas fa-file-download"></i>
-    </a></div>
-</div>
- 
- 
-  
-   
-	
-	<div class="about-text">
-	
-	 <img src='img/2.png' width="100" height="100" alt="Аватарка"> 
-	
-	
-	<p>
-	
-	Я начинающий HTML-верстальщик, обучающийся самостоятельно и с помощью опытного наставника. 
-Занимаюсь версткой различных макетов, с помощью чего применяю на практике освоенные знания. Есть опыт верстки адаптивных страниц (Bootstrap, media-queries, Flexbox). Стили пишу на Sass, (в академии есть LESS)  разметку на Jade. ( посмотри что это)Собираю с помощью Gulp. (И это) Также есть опыт написания небольшого слайдера на JS. Освоил на базовом уровне библиотеку Jquery и фреймворк Vue JS и React . 
-Стремлюсь начать профессиональную деятельность, прежде всего для развития, получения знаний и навыков в процессе работы с более опытными коллегами. Не боюсь, а наоборот стремлюсь, к постоянному обучению и развитию.
-	
-	</p>
+			<div class="contacts">
+				<div id="about-me">кто я ?</div>
 
-	 </div>
-	 
+				<div id="contacts"> </div>
+				<div><img src="https://img.icons8.com/dotty/20/000000/birthday-cake.png"> 14/03/1992</div>
+				<div> <img src="https://img.icons8.com/ios/20/000000/phone.png"> <a href="tel:+79289031281">89289031281</a></div>
+				<div> <img src="https://img.icons8.com/ios/20/000000/email.png"> <a href="misha.izgareva@gmail.com">misha.izgareva@gmail.com</a></div>
+			</div>
+
+
+			<!--				кнопка скачать резюме	-->
+			<div class="download">
+				<div> <a>
+						<i class="fas fa-file-download"></i>
+					</a></div>
+			</div>
+
+			<div class="about-text">
+
+				<img src="img/avatar.png" width="100" height="100" alt="Аватарка">
+
+				<p>
+
+					Я начинающий HTML-верстальщик, обучающийся самостоятельно и с помощью опытного наставника.
+					Занимаюсь версткой различных макетов, с помощью чего применяю на практике освоенные знания. Есть опыт верстки адаптивных страниц (Bootstrap, media-queries, Flexbox). Стили пишу на Sass, (в академии есть LESS) разметку на Jade. ( посмотри что это)Собираю с помощью Gulp. (И это) Также есть опыт написания небольшого слайдера на JS. Освоил на базовом уровне библиотеку Jquery и фреймворк Vue JS и React .
+					Стремлюсь начать профессиональную деятельность, прежде всего для развития, получения знаний и навыков в процессе работы с более опытными коллегами. Не боюсь, а наоборот стремлюсь, к постоянному обучению и развитию.
+
+				</p>
+			</div>
+			</div>
+			</section>
 			
-   
-	 
-	 
-	
-
 <!--
-.....
+<--.....
 SKILLS
 ......
 -->
-	
+			<section id="skills">
 
-	  <section id="skills">
-	  	
-		  <h3>что я умею</h3>
-		<div class="container-skills">
-		
-				<div class="column-1">
-					<p>HTML </p><p class="skill-text">могу сверстать сайт</p>
-					<div class="cont">
-					  <div class="skills html">70%</div>
+
+				<h3>что я умею ?</h3>
+				<div class="container-skills">
+
+					<div class="column-1">
+						<p>HTML </p>
+						<p class="skill-text">могу задать разметку сайта/норм читаю код</p>
+						<div class="cont">
+							<div class="skills html">70%</div>
+						</div>
+
+						<p>CSS </p>
+						<p class="skill-text"> могу сделать красивый внешний вид</p>
+						<div class="cont">
+							<div class="skills css">60%</div>
+						</div>
+
+						<p>JavaScript</p>
+						<p class="skill-text"> могу оживить сайт</p>
+						<div class="cont">
+							<div class="skills js">30%</div>
+						</div>
+
+						<p>jQuerry</p>
+						<p class="skill-text"> могу подключить и использовать библиотеку</p>
+						<div class="cont">
+							<div class="skills jq">30%</div>
+						</div>
+
+						<p>Less/Scss</p>
+						<p class="skill-text">Знаю в теории препроцессоры</p>
+						<div class="cont">
+							<div class="skills less">50%</div>
+						</div>
+	<p>FlexBox</p>
+						<p class="skill-text"> могу сделать сетку на флексах</p>
+						<div class="cont">
+							<div class="skills flex">80%</div>
+						</div>
+					</div>
+					<div class="column-2">
+						<p>Gulp</p>
+						<p class="skill-text">могу оптимизировать и собрать</p>
+						<div class="cont">
+							<div class="skills gulp">50%</div>
+						</div>
+
+						<p>cross-browser / adaptive layout</p>
+						<p class="skill-text"> умею писать media-запросы для создания адаптивного дизайна
+</p>
+						<div class="cont">
+							<div class="skills lo">50%</div>
+						</div>
+
+						<p>GitHub, GIT </p>
+						<p class="skill-text"> lalallalal</p>
+						<div class="cont">
+							<div class="skills git">10%</div>
+
+						</div>
+
+						<p>Bootstrap4</p>
+						<p class="skill-text">Знаю основы, могу собрать простой лендинг</p>
+						<div class="cont">
+							<div class="skills node">10%</div>
+						</div>
+
+						<p> React</p>
+						<p class="skill-text">Начала изучать фреймворк </p>
+						<div class="cont">
+							<div class="skills pug">10%</div>
+						</div>
+						
+						<p>CSS Grid Layout</p>
+						<p class="skill-text">могу сделать сетку на гридах </p>
+						<div class="cont">
+							<div class="skills grids">80%</div>
+						</div>
 					</div>
 
-					<p>CSS </p>  <p class="skill-text"> могу оживить</p>
-					<div class="cont">
-					  <div class="skills css">60%</div>
-					</div>
-
-					<p>JavaScript</p> <p class="skill-text"> lalallalal</p>
-					<div class="cont">
-					  <div class="skills js">30%</div>
-					</div>
-
-					<p>jQuerry</p><p class="skill-text"> lalallalal</p>
-					<div class="cont">
-					  <div class="skills jq">30%</div>
-					</div>
-					
-					<p>Less/Scss</p><p class="skill-text"> lalallalal</p>
-					<div class="cont">
-					  <div class="skills less">50%</div>
-					</div>
-					
 				</div>
-				<div class="column-2">
-					<p>Gulp</p><p class="skill-text">могу оптимизировать и собрать</p>
-					<div class="cont">
-					  <div class="skills gulp">50%</div>
-					</div>
-					
-					<p>cross-browser / adaptive layout</p><p class="skill-text"> lalallalal</p>
-					<div class="cont">
-					  <div class="skills lo">50%</div>
-					</div>
-					
-					<p>GitHub, GIT знакома</p><p class="skill-text"> lalallalal</p>
-					<div class="cont">
-					  <div class="skills git">10%</div>
 
-					</div>
-					
-					<p>Node.js</p><p class="skill-text"> lalallalal</p>
-					<div class="cont">
-					  <div class="skills node">10%</div>
-					</div>
-					
-					<p>Pug</p><p class="skill-text"> lalallalal</p>
-					<div class="cont">
-					  <div class="skills pug">10%</div>
-					</div>
-				</div>
-			
-			</div>
+			</section>
+
 		
-	  	
-	  	
-	  </section>
-	  
-		</div> 
-		
-	</section>
-	
-	
+
+
+
+
 	<!--PORTFOLIO -->
-	
-<!--
+
+	<!--
 	<section class="portfolio">				
 				<h1> Портфолио </h1>
 				<div class=imageboxex>
@@ -221,67 +211,76 @@ SKILLS
 	<h3>И такой сайт</h3>
 </div>	
 		</div>
-
-
-
-
-
 	
-	
-		
 		</section>
 		
 -->
-		
-		<aside class="add">
+
+	<aside class="add" id="add">
 		<div class="education">
-		<h3>Образование</h3>
-		<p> Звукорежиссер <br>
-		неполное высшее образование</p>
-			
-			
-			
+			<h3>Образование</h3>
+			<p> неполное высшее образование: <br>
+			Звукорежиссер
+				</p>
 		</div>
-		
+
 		<section class="boxex grid">
-		<div class="content-title"></div>
-			<h2>fun facts</h2>
-			
-		<ul>
-			<li>
-				<img src="snow.png" alt="">
-				<div class="box">
-					<h3 class="box-title"> Мерзла в Сибири</h3>
-					<p> 25 лет</p>
-				</div>	
-			</li>
-			<li>
-				<img src="photo.png" alt="">
-				<div class="box">
-					<h3 class="box-title"> Фотографировала</h3>
-					<p>в 3х городах</p>
-				</div>	
+			<div class="content-title"></div>
+			<h2>Факты</h2>
+
+			<ul>
+				<li>
+					<img src="img/data.png" alt="">
+					<div class="box">
+						<h3 class="box-title">Изучаю сейчас</h3>
+						<p>data sience</p>
+						<p>less/sass</p>
+						<p>react</p>
+					</div>
 				</li>
 				<li>
-				<img src="gitar.png"alt="">
-				<div class="box">
-					<h3 class="box-title">Умею играть на гитаре</h3>
-					<p> 2 песни</p>
-				</div>	
-				
+					<img src="img/snow.png" alt="">
+					<div class="box">
+						<h3 class="box-title"> Мерзла в Сибири</h3>
+						<p> 25 лет</p>
+					</div>
+				</li>
+				<li>
+					<img src="img/photo.png" alt="">
+					<div class="box">
+						<h3 class="box-title">Работала фотографом</h3>
+						<p>3 года</p>
+					</div>
+				</li>
+				<li>
+					<img src="img/gitar.png" alt="">
+					<div class="box">
+						<h3 class="box-title">Умею играть на гитаре</h3>
+						<p> 2 песни</p>
+					</div>
+
+				</li>
+	<li>
+					<img src="img/city.png" alt="">
+					<div class="box">
+						<h3 class="box-title">Жила</h3>
+						<p>в 4х городах</p>
+					</div>
+				</li>
+				<li>
+					<img src="img/math.png" alt="">
+					<div class="box">
+						<h3 class="box-title"> Полюбила математику</h3>
+						<p>после ВУЗа</p>
+					</div>
 				</li>
 				
-		</ul>
-		
+			</ul>
+
 		</section>
-		
-		
-		
-		
-		
-		
-		
-<!--
+
+
+		<!--
 		<div class="interests">
 		<h3> Интересы </h3>
 		 
@@ -293,96 +292,80 @@ SKILLS
 			
 			</div>
 -->
-			
-		</aside>
-		
 
-		
-	
-		
+	</aside>
 
-		
-		
 
-		 <!--.......
+	<!--.......
 		 MAIN END
 		 .....-->
-		
-		
 
-	
-	
-	 <!--.....
+
+	<!--.....
   SLIDER
   .......-->
-  <div class="wrap-slider">
-  <h2>
-		Что я сделала
-		
-	</h2>
-	 <div id="slider" class="slider">
-    <ol class="slider__indicators">
-      <li class="slider__indicator slider__indicator_active" data-slide-to="0"></li>
-      <li class="slider__indicator" data-slide-to="1"></li>
-      <li class="slider__indicator" data-slide-to="2"></li>
-      <li class="slider__indicator" data-slide-to="3"></li>
-    </ol>
-    <div class="slider__items">
-      <div class="slider__item slider__item_active">
-        <div class="fr-slide slides"></div>
-        <div class="text">Сайт-резюме</div>
-      </div>
-      <div class="slider__item">
-        <div class="sc-slide slides" >
-        	<img src="img/photo2.png">
-        </div>
-        <div class="text">Сайт-портфолио</div>
-      </div>
-      <div class="slider__item">
-        <div class="th-slide"></div>
-        <div class="text">Сайт для фотографа</div>
-		</div>	
-      <div class="slider__item">
-        <div class="forth-slide">
-        	<div class="text">Интернет магазин</div>
-        </div>
-      </div>
-    </div>
-    <a class="slider__control slider__control_prev" href="#" role="button"></a>
-    <a class="slider__control slider__control_next" href="#" role="button"></a>
-  </div>
+	<div class="wrap-slider" id="projects">
+		<div class="slider-title">
+		<h2>
+			Что я сделала :
+
+		</h2>
+		</div>
+		<div id="slider" class="slider">
+			<ol class="slider__indicators">
+				<li class="slider__indicator slider__indicator_active" data-slide-to="0"></li>
+				<li class="slider__indicator" data-slide-to="1"></li>
+				<li class="slider__indicator" data-slide-to="2"></li>
+				
+			</ol>
+			<div class="slider__items">
+				<div class="slider__item slider__item_active">
+					<div class="fr-slide slides"></div>
+					<div class="text">Сайт-резюме</div>
+				</div>
+				<div class="slider__item">
+					<div class="sc-slide slides">
+					</div>
+					<div class="text">Сайт для фотографа</div>
+				</div>
+				<div class="slider__item">
+					<div class="th-slide slides"></div>
+					<div class="text">Страничка с <br> контактной формой</div>
+				</div>
+
+			</div>
+			<a class="slider__control slider__control_prev" href="#" role="button"></a>
+			<a class="slider__control slider__control_next" href="#" role="button"></a>
+		</div>
 	</div>
-   
-   
-   <!--
+
+
+	<!--
 		........
 		FOOTER
 		........
 -->
+
+
+	<footer id="footer-page">
+
+
 		
+			<ul>
+				<li>
+
+					<a href="https://www.instagram.com/mishka.izgareva" target="_blank">
+						<i class="fa fa-instagram"></i>
+					</a> </li>
+				<li> <a href="https://github.com/mihailinkai" target="_blank"><i class="fa fa-github"></i></a></li>
+				<li><a href="https://tlgg.ru/@mihailinka" target="_blank"> <i class="fa fa-telegram"></i></a></li>
+				<li><a href="https://vk.com/mihailinkai" target="_blank"><i class="fa fa-vk"></i></a></li>
+			</ul>
 		
-   
-   
-   <footer id="footer-page">
-			
-								
-		<div class="wrapper-icons">
-  <ul>
-	  <li>
-	  	
-	 <a href="https://www.instagram.com/mishka.izgareva" target="_blank">
-	 	<i class="fa fa-instagram"></i>
-	 </a> </li>
-	  <li> <a href="https://github.com/mihailinkai" target="_blank"><i class="fa fa-github"></i></a></li>
-	  <li><a href="https://tlgg.ru/@mihailinka" target="_blank"> <i class="fa fa-telegram"></i></a></li>
-	  <li><a href="https://vk.com/mihailinkai" target="_blank"><i class="fa fa-instagram"></i></a></li> 
-  </ul>
-</div>
-	
-			
-</footer>
-   
-   
-    <script src="js/js.js" type="text/javascript"></script>
-</body>
-</html>
+
+
+	</footer>
+
+
+	<script src="js/js.js" type="text/javascript"></script>
+</body></html>

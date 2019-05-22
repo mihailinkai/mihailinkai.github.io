@@ -1,12 +1,6 @@
 
 
 
-
-
-
-
-
-
 /* General styles */
 
 html {
@@ -19,26 +13,27 @@ html {
 body {
 	 font-family: 'Montserrat', sans-serif;	
 margin: 0;
-	height: ;
+	justify-items: stretch;
+	width: 100%;
 	font-size: 100%;
 	line-height: 1.5em;
 	color: #666;
-	
+	display: grid;
+	grid-auto-columns: 700px auto;
+	grid-auto-rows: 200px auto auto 300px 500px 100px 400px
+}
 	 
 	
-} 
+		
+/*		HEADER*/
 
 
-header h1, h2{
-	margin-left: 150px;
-	margin-top: 5px;
-	color: #193d21;
-	
-	
-	
-}
+
+
 	
 header {
+	grid-row: 1/2;
+	grid-column: 1/3;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -47,68 +42,19 @@ header {
 
 }
 
+header h1, 
+header h2{
+	margin-left: 150px;
+	margin-top: 20px;
+	color: #193d21;	
+}
+
 /* NAVIGATION MENU*/
-/*
- ul {
-  list-style: none; /*убираем маркеры списка*/
-/*
-  margin: 0; убираем верхнее и нижнее поле, равное 1em
-  padding-left: 0; убираем левый отступ, равный 40px
-*/
-}
- 
-
-/*
-.menu
-{
-display: flex;	
-	
-	justify-content: flex-start;
-  margin-left: 150px;
-  width: 500px;
- 
-}
-.menu ul {
-	display: flex;
-} 
-*/
-
-/* только непосредственные потомки */
-/*
-.menu > li {
-  background: #e6c2de;
-   transform: skewX(25deg);
-	border-right: 1px solid white;
-}
-
-nav a {
-  display: block;
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;       убираем подчеркивание текста ссылок
-*/
-/*
-  font-family: Arial, Helvetica;
-  font-size: 10px;
-}		
-
-nav li:hover {
-  background:#c7e1ce;
-	 box-shadow: 5px 0 10px rgba(2,2,2,.9);
-}		
-
-.menu > li > a {
-  transform: skewX(-25deg);
-  padding: 1em 2em;
-}
-*/
 
 
- nav {
 
-	
-}
  nav li{
+	 margin-right: 20px;
     display: inline-block;
 	 vertical-align: top;
     
@@ -147,9 +93,6 @@ nav label:hover{
 	 box-shadow: 5px 0 10px rgba(2,2,2,.9);
 }
 
-
-
-
 /*.....
 button
 .......*/
@@ -157,15 +100,13 @@ div.download{
         
         width:125px;
         height: 40px;
-        margin-top: 25px;
+        margin-top: 55px;
         padding: 10px;
        position: relative;
         box-sizing: border-box;
 	text-transform: uppercase;
 	
-        
-        
-        
+           
     } 
     div.download i{
         transition: all .3s linear 0s;
@@ -241,17 +182,23 @@ div.download{
 
 #about-me {
 	background: #c7e1ce;
-	 
-	
 	 color: #fff;
 	 text-transform: uppercase;
- font-size: 10px;
-	padding-bottom: 10px;
+ height: 20px;
 	width: 60px;
 	 padding: 1em 2em;
-	margin-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom:  10px;
+	margin-bottom: 15px;
 	 box-shadow: 5px 0 10px rgba(1,1,1,.1);
+text-align: center;
+	font-size: 12px;
+	
+}
 
+	
+	 
+	
 }
 
 .contacts div {
@@ -261,6 +208,9 @@ div.download{
 
 .about-contacts {
 	
+	
+	grid-column: 1/3;
+	grid-row: 2/3;
 	max-width: 1024px ;
 	
 	margin-left: auto;
@@ -312,35 +262,6 @@ div.download{
 
 
 
-.add{
-	display: flex;
-	justify-content: center;
-	
-	
-	grid-area: box-5;
-	margin-bottom: 150px;
-}
-.education {
-	
-	align-self: center;
-}
-.about-text p {
-
-	font-size: 12px;
-	padding: 5px;
-}
-]
-.wrapper-about .skills {
-	border: 2px solid black;
-	grid-area: box-4;
-}
-.about-text img {
-	
-	padding: 20px;
-
-}
-
-
  
 
  
@@ -390,54 +311,381 @@ div.download{
         
 
 
-
-
-/* portfolio*/
-
 /*
-.portfolio {
-	background-color:#d4e1f7;
-	padding: 10px;
-	
-	width: 1140px;
-	
-	margin-left: auto;
-	margin-right: auto;
-	
+ ......
+SKILLS 
+........
+*/
+
+#skills {
+	grid-column: 1/3;
+	grid-row: 3/4;
+	justify-content:space-between;
+		display: flex;
+margin-bottom: 100px;
 }
 
-.portfolio h1 {
+#skills h3 {
+		background: #c7e1ce;
+	 
+	border-right: 1px solid white;
+	 color: #fff;
+	 text-transform: uppercase;
+ font-size: 12px;
+	padding-bottom: 10px;
+	width: 0px;
+	 padding: 1em 2em;
+	margin-right: 20px;
+	margin-left: 50px;
+	 writing-mode: vertical-lr;
+	text-align: center;
 	
-		text-align: center;
 	
-}
-.imageboxex {
-	
-	display:flex;
-	flex-direction: row;
-	justify-content: space-around;
-	
-	min-width: 400px;
-}
-.imageboxex img {
-	
-	max-width:  200px ;
-	max-height: 100px ;
+	 
 }
 
-.imagebox {
+.skill-text {
+	
+	font-size: 10px;
+	opacity: 0.5;
+}
+
+.container-skills {
 	
 	display: flex;
-	flex-direction: column;
+	justify-content: space-between;
+}		
+.column-1 {
+	width: 610px;
+	margin-left: ;
+	align-self: ;
+	
+	
+}
+.column-2 {
+	width: 610px;
+	margin-left: ;
+	
+}
+			.cont {
+				width: 500px;
+				background-color: #efdecd;
+				
+				border-radius: ;
+			}
+
+			.skills {
+				border-radius: ;
+				text-align: right;
+				padding: 10px;
+				color: white;
+				margin-bottom: 1rem;
+			}
+
+.html {
+	
+	width: 70%;
+				background-color: #e6c2de;
+				animation: animate 3s 1;
 }
 
-.imagebox h3 {
+.css {
 	
-	margin:5px;
-	align-self:stretch;
+	width: 65%;
+				background-color: #e6c2de;
+				animation: animate 3s 1;
+	
+}
+		
+			
+			.js {
+				width: 30%;
+				background-color: #e6c2de;
+				animation: animate 3s 1;
+			}
+			
+			.jq {
+				width: 30%;
+				background-color: #e6c2de;
+				animation: animate 3s 1;
+			}
+			
+			.less{
+				width: 50%;
+				background-color: #e6c2de;
+				animation: animate 3s 1;
+			}
+			
+.flex {
+	
+		width: 80%;
+				background-color: #e6c2de;
+				animation: animate 3s 1;
+}
+			.gulp {
+				width: 50%;
+				background-color: #c7e1ce;
+				animation: animate 3s 1;
+			}
+			
+			
+			
+		.lo {
+				width: 50%;
+				background-color:#c7e1ce;
+				animation: animate 3s 1;
+			}
+			
+		
+			.git{
+				width: 15%;
+				background-color: #c7e1ce;
+				animation: animate 3s 1;
+			}
+			
+		.node {
+				width: 10%;
+				background-color: #c7e1ce;
+				animation: animate 3s 1;
+			}
+			
+		.pug {
+				width: 10%;
+				background-color: #c7e1ce;
+				animation: animate 3s 1;
+			}
+			
+.grids {
+	
+	width: 80%;
+	background-color: #c7e1ce;
+				animation: animate 3s 1;
+			}
+
+			
+			
+			@keyframes animate {
+				from {
+					width: 0%;
+				}
+			}
+			
+			p {
+				font-weight: bold;
+				margin-bottom: 0 !important;
+			}
+
+
+
+/*FACTS*/
+	
+
+
+.add{
+	
+	display: flex;
+	justify-content: space-around;
+	
+	
+	grid-area: box-5;
+	margin-bottom: 150px;
+}
+.education {
+	
+	align-self: center;
+}
+.about-text p {
+
+	font-size: 12px;
+	padding: 5px;
+}
+]
+.wrapper-about .skills {
+	border: 2px solid black;
+	grid-area: box-4;
+}
+.about-text img {
+	
+	padding: 20px;
+
+}
+
+
+
+
+.interests{
+	
+ 
+  margin-left: 200px;
+  display: flex;
+  justify-content: space-between;
+	
+
+	max-width: 200px;
+  max-height: 200px;
+}
+	
+	
+
+
+.interests img{
+	max-height:  80px;
+	max-width: 50px;
+  
+ margin: 5px;
+}
+
+
+.add {
+	grid-column: 1/3;
+	grid-row:4/5;
+	display: flex;
+	height: 200px;
+	margin-top:3px;
+	background:;
+}
+
+.education p {
+	margin-right: 50px;
 	font-size: 10px;
 }
-*/
+
+.add .interests {
+	margin-left: 340px;
+	
+	display: flex;
+	justify-content: space-between;
+	
+	
+	}
+.in-img {
+	align-self: center;
+	
+	
+}
+
+
+
+
+
+.boxex p, 
+.boxex h3 {
+	
+	font-size: 10px;
+	text-align: center;
+}
+
+
+/*бокс факты*/
+.boxex h2 {
+	
+	background:  #c7e1ce;
+	  box-shadow: 5px 0 10px rgba(1,1,1,.2);
+	 color: #fff;
+	 text-transform: uppercase;
+	 font-family: Arial, Helvetica;
+  font-size: 12px;
+width: 50px;
+	 padding: 1em 8em;
+	margin-bottom: 20px;
+	
+}
+.boxex p {
+	
+	color:#e6c2de;
+	font-size: 12px;
+	margin: 0;
+}
+.education h3 {
+	
+	background:  #c7e1ce;
+	  box-shadow: 5px 0 10px rgba(1,1,1,.2);
+	 color: #fff;
+	 text-transform: uppercase;
+	 font-family: Arial, Helvetica;
+  font-size: 10px;
+	padding-bottom: 10px;
+	width: 80px;
+	 padding: 1em 2em;
+	margin-bottom: 20px;
+}
+
+.interests h3 {
+	
+	background: #c7e1ce;
+	 
+	 box-shadow: 5px 0 10px rgba(1,1,1,.2);
+	 color: #fff;
+	 text-transform: uppercase;
+	 font-family: Arial, Helvetica;
+  font-size: 10px;
+	padding-bottom: 10px;
+	width: 80px;
+	height: 10px;
+	
+  padding: 1em 2em;
+	margin-bottom: 20px;
+}
+
+
+
+
+/* Buckets section */
+
+.boxex {
+	margin-bottom: ;
+	margin-top: ;
+    padding: ;
+    background:;
+	
+}
+
+.boxex ul {
+    margin: 0;
+    padding: 0;
+}
+
+.boxex li {
+    margin-bottom: 1em;
+    background: white;
+    list-style-type: none;
+}
+.boxex h2 {
+	margin:;
+}
+
+.boxex img{
+	 display: block;
+    border-bottom: 1px solid black;
+   width: 50px;
+   height: auto;
+	margin: auto;
+	padding: 20px;
+	
+}
+.box {
+    padding: 1.5em;
+}
+
+
+@media screen and (min-width: 700px) {
+    @supports (display: flex) {
+
+        .boxex ul {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .boxex li {
+            width: 31%;
+        }
+
+    }
+}
+
+
+
+
 	
 /*
 SLIDER
@@ -445,11 +693,16 @@ SLIDER
 
 
 
+
 .wrap-slider {
+	grid-column: 1/3;
+	grid-row: 5/6;
 	
 	margin: 0;
 	margin-top: 100px;
 }
+
+
 .slider {
   /* устанавливаем относительное позиционирование элементу */
   position: relative;
@@ -616,321 +869,99 @@ SLIDER
   background-color: #fff;
 }
 
+.wrap-slider .slider-title {
+	
+	position: absolute;
+left:50px;
 
+	
+}
 
 .wrap-slider h2 {
 		background: #e6c2de;
-	 
-
+	   box-shadow: 5px 0 10px rgba(1,1,1,.2);
+text-align: center;
 	 color: #fff;
 	 text-transform: uppercase;
-	margin-left: 500px;
+	margin-left: ;
  font-size: 16px;
 	padding-bottom: 10px;
 	width: 150px;
 	 padding: 1em 2em;
-	margin-bottom: 30px;
+	margin-bottom:100px;
 	
 	
 }
 
 
-	
-.interests{
-	
- 
-  margin-left: 200px;
-  display: flex;
-  justify-content: space-between;
-	
 
-	max-width: 200px;
-  max-height: 200px;
-}
+.slides {
 	
-	
-
-
-.interests img{
-	max-height:  80px;
-	max-width: 50px;
-  
- margin: 5px;
-}
-
-
-.add {
-	display: flex;
-	height: 200px;
-	margin-top:3px;
-	background:;
-}
-
-.education p {
-	margin-right: 50px;
-	font-size: 10px;
-}
-
-.add .interests {
-	margin-left: 340px;
-	
-	display: flex;
-	justify-content: space-between;
-	
-	
-	}
-.in-img {
-	align-self: center;
-	
-	
+	height: 250px; 
+	background: linear-gradient(45deg, rgba(103, 0, 31, .1), rgba(34, 101, 163, .1));
 	
 }
 
 
-.boxex {
-	
-	
-}
-.boxex p, 
-.boxex h3 {
-	
-	font-size: 10px;
-	text-align: center;
-}
-
-.boxex h2 {
-	
-	background:  #c7e1ce;
-	  box-shadow: 5px 0 10px rgba(1,1,1,.2);
-	 color: #fff;
-	 text-transform: uppercase;
-	 font-family: Arial, Helvetica;
-  font-size: 10px;
-	padding-bottom: 10px;
-	width: 80px;
-	 padding: 1em 2em;
-	margin-bottom: 20px;
+.fr-slide {
+	background: 
+		url(../img/resume.png) no-repeat 50% 50%;">
 	
 }
-.boxex p {
+.sc-slide {
+	background:
+	url(../img/phsite2.png) no-repeat 50% 50%;">
 	
-	color:#e6c2de;
-}
-.education h3 {
-	
-	background:  #c7e1ce;
-	  box-shadow: 5px 0 10px rgba(1,1,1,.2);
-	 color: #fff;
-	 text-transform: uppercase;
-	 font-family: Arial, Helvetica;
-  font-size: 10px;
-	padding-bottom: 10px;
-	width: 80px;
-	 padding: 1em 2em;
-	margin-bottom: 20px;
 }
 
-.interests h3 {
-	
-	background: #c7e1ce;
-	 
-	 box-shadow: 5px 0 10px rgba(1,1,1,.2);
-	 color: #fff;
-	 text-transform: uppercase;
-	 font-family: Arial, Helvetica;
-  font-size: 10px;
-	padding-bottom: 10px;
-	width: 80px;
-	height: 10px;
-	
-  padding: 1em 2em;
-	margin-bottom: 20px;
+.th-slide {
+background:
+	url(../img/contact.png) no-repeat 50% 50%;">
 }
 
-/*
- ......
-SKILLS 
-........
-*/
-#skills h3 {
-		background: #c7e1ce;
-	 
-	border-right: 1px solid white;
-	 color: #fff;
-	 text-transform: uppercase;
- font-size: 12px;
-	padding-bottom: 10px;
-	width: 0px;
-	 padding: 1em 2em;
-	margin-right: 20px;
-	 writing-mode: vertical-lr;
-	text-align: center;
-	
-	
-	 
-}
-#skills {
-	
-	display: flex;
 
-}
-.skill-text {
-	
-	font-size: 10px;
-	opacity: 0.5;
-}
 
-.container-skills {
+
+.slides img {
 	
-	display: flex;
-	justify-content: space-between;
-}		
-.column-1 {
+	margin:  auto 0;
 	width: 500px;
-	margin-left: px;
-	align-self: center;
-	
-	
-}
-.column-2 {
-	width: 500px;
-	margin-left: 20px;
-	align-self: center;
-}
-			.cont {
-				width: 500px;
-				background-color: #efdecd;
-				
-				border-radius: ;
-			}
-
-			.skills {
-				border-radius: ;
-				text-align: right;
-				padding: 10px;
-				color: white;
-				margin-bottom: 1rem;
-			}
-
-.html {
-	
-	width: 70%;
-				background-color: #e6c2de;
-				animation: animate 3s 1;
+	height: auto;
+	margin-right: 100px;
+	position: absolute;
+	top: ;
+	right: 300px;
 }
 
-.css {
-	
-	width: 65%;
-				background-color: #e6c2de;
-				animation: animate 3s 1;
-	
-}
-		
-			
-			.js {
-				width: 30%;
-				background-color: #e6c2de;
-				animation: animate 3s 1;
-			}
-			
-			.jq {
-				width: 30%;
-				background-color: #e6c2de;
-				animation: animate 3s 1;
-			}
-			
-			.less{
-				width: 50%;
-				background-color: #e6c2de;
-				animation: animate 3s 1;
-			}
-			
-			.gulp {
-				width: 50%;
-				background-color: #c7e1ce;
-				animation: animate 3s 1;
-			}
-			
-			
-			
-		.lo {
-				width: 50%;
-				background-color:#c7e1ce;
-				animation: animate 3s 1;
-			}
-			
-		
-			.git{
-				width: 15%;
-				background-color: #c7e1ce;
-				animation: animate 3s 1;
-			}
-			
-		.node {
-				width: 10%;
-				background-color: #c7e1ce;
-				animation: animate 3s 1;
-			}
-			
-		.pug {
-				width: 10%;
-				background-color: #c7e1ce;
-				animation: animate 3s 1;
-			}
-			
-			
-			
-			@keyframes animate {
-				from {
-					width: 0%;
-				}
-			}
-			
-			p {
-				font-weight: bold;
-				margin-bottom: 0 !important;
-			}
 
 
-
-
-
- 
 
 
 /* ....
-icons..... */
+footer icons..... */
 
-footer{
-
-	padding: px;
-}
-#footer-pade {
+footer {
+	grid-column: 1/3;
+	grid-row: 6/7;
 	
-	
-		background:
-}
-.wrapper-icons{
-	background:  ;
 	background:linear-gradient(45deg, rgba(103, 0, 31, .1), rgba(34, 101, 163, .1));
-  position: absolute;
+  position:;
 	justify-content: ;
-	 width: 100%;
+	 width:;
 	height: ;
 
 }
 
-.wrapper-icons ul{
+footer ul{
 	display: flex;
 	justify-content: center;
   list-style: none;
-  width: 100%;
+  width: ;
   height: 20px;
 	margin-top: 50px;
 }
 
-.wrapper-icons ul li{
+footer ul li{
   
   width: 25px;
   height: 20px;
@@ -943,11 +974,11 @@ footer{
   transition: all 0.5s linear;
 }
 
-.wrapper-icons ul li:last-child{
+footer ul li:last-child{
   margin-right: 0;
 }
 
-.wrapper-icons ul li .fa{
+footer  ul li .fa{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -961,12 +992,12 @@ footer{
 	 box-shadow: 5px 0 10px rgba(2,2,2,.5);
 }
 
-.wrapper-icons ul li:hover{
+footer ul li:hover{
   background: #fff;
  
 }
 
-.wrapper-icons ul li:hover .fa{
+footer ul li:hover .fa{
   color: #c7e1ce;
 }
 
@@ -988,107 +1019,11 @@ ul {
 
 
 
-/* slider
-
-*/
-
-.fr-slide {
-	height: ;
-	background-image:url("photo1.jpg");
-	
-}
-.sc-slide {height: 250px; 
-	background-image: url(photo1.png) 50% 50%;
-	
-}
-
-.th-slide {
-	height: 250px; background:linear-gradient(45deg, rgba(103, 0, 31, .1), rgba(34, 101, 163, .1)), url(photo1.png) repeat;">
-}
-
-.forth-slide {
-	
-	height: 250px;
-	background: linear-gradient(45deg, rgba(103, 0, 31, .1), rgba(34, 101, 163, .1)),
-		url(../img/photo2.png) no-repeat 50% 50%;"
-}
-
-.slides {
-	
-	height: 250px;
-	background: ;
-	
-}
-
-.slides img {
-	
-	margin:  auto 0;
-	width: 500px;
-	height: auto;
-	margin-right: 100px;
-	position: absolute;
-	top: ;
-	right: 300px;
-}
-
-
-
-/* Buckets section */
-
-.boxex {
-	margin-bottom: ;
-	margin-top: ;
-    padding: ;
-    background:;
-	
-}
-
-.boxex ul {
-    margin: 0;
-    padding: 0;
-}
-
-.boxex li {
-    margin-bottom: 1em;
-    background: white;
-    list-style-type: none;
-}
-.boxex h2 {
-	margin:;
-}
-
-.boxex img{
-	 display: block;
-    border-bottom: 1px solid black;
-   width: 50px;
-   height: auto;
-	margin: auto;
-	padding: 20px;
-	
-}
-.box {
-    padding: 1.5em;
-}
 
 
 /*--------------------------------------------------------------
 Use flex to create a three-bucket layout 
 --------------------------------------------------------------*/
-
-@media screen and (min-width: 700px) {
-    @supports (display: flex) {
-
-        .boxex ul {
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .boxex li {
-            width: 31%;
-        }
-
-    }
-}
 
 
 
