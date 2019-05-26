@@ -1,94 +1,38 @@
-@media screen and (max-width: 700px){
-  .wrapper ul{
-      width: 100px;
-	  
-  }
-  .wrapper ul li{
-      margin-top: 20px;
-	  
-  }
-	
-	.menu  {
-		display: flex;
-		flex-direction: column;
-		height: 100px;
-	
-		margin-top: 120px;
-		margin-bottom: 120px;
-	
-	}
-}
 
-.menu li {
-	
-		border-bottom: 1px solid white;
-	width: 120px;
-	
-}
 
-body {
+@media (max-width: 992px) {
 	
-	display: grid;
-	grid-template-columns: 300px;
-	grid-template-rows: 100px 50px 50px 50px 50px 50px;
-	grid-template-areas: 
-		"row-1"
-		"row-2"
-		"row-3"
-		"row-4"
-		"row-5"
-		"row-6"
-}
-
-header {
 	
-	grid-area: "row-1"
+	body {
 		
-}
-.wrapper-about {
+		
+		grid-template-rows: 200px auto auto 400px auto 100px ; 
+	}
 	
-	display:grid;
-	margin: ;
-	max-width:;
-	min-width: ;
-	grid-template-columns:auto;
-	grid-template-rows: auto;
-	grid-gap: 20px;
-	grid-template-areas: 
-		"box-1"
-		"box-2"
-		"box-3"
-		"box-4"
 	
-}
-
-.container-skills {
+/*	HEADER*/
 	
-	width:200px;
-	display:flex;
-	flex-direction: column;
-}
-.column-2, .column-1 {
+	header  {
+		
+		grid-row : 1/2;
+	}
 	
-	max-width: 200px;
-}
-.cont {
 	
-	width: 100%;
-}
-.skills {
+	header h1{
+		font-size: 25px;
+		line-height: 10px;
+		margin: 18px;
+		
+	}
+	header h2 {
+		font-size: 20px;
+		margin: 18px;
+		line-height: 10px;
+		
+	}
 	
-	width: ;
-}
-
-.add {
+/*	MENU*/
 	
-	display: flex;
-	flex-direction: column;
-	
-}
-
-
 nav li {
 	
 	display: flex;
@@ -108,32 +52,299 @@ nav li:last-child {
 	border-bottom:none;
 }
     nav label{
+		margin: 20px ;
          display: inline-block;
 		
     }
     nav > ul {
+		margin: auto;
         display: none;
+		background: linear-gradient(45deg, #EECFBA, #c7e1ce);
     }
     input[type="checkbox"]:checked ~ label + ul {
         display: block;
+		
     }
+	
+/*	ABOUT ME*/
+	
+		.about-contacts {
+		
+		grid-row :
+		2/3;
+		margin:0;
+		max-width: 200px;
+		margin-top: 210px;
+		}
+	}
+
+
+	
+
+}
+.wrapper-about {
+	display:grid;
+		grid-template-columns:  auto auto;
+	grid-template-rows:  auto auto ;
+	grid-gap: 20px;
+	grid-template-areas: 
+		"box-1 box-3"
+		"box-2 box-3"
+		 
+		
+	
+}
+
+.wrapper-about .contacts {
+	
+	margin: 0;
+	padding: 0;
+	grid-area: box-2;
+	
+	
+}
+.wrapper-about .dowload{
+	
+		grid-area: box-1;
+}
+	
+
+
+	
+
+.wrapper-about .about-text {
+	grid-area: box-3;
+	width: auto;
+	
+
+
+}
+	
+.about-text p {
+	
+	
+	
+    font-size: 1.5vw;
+
+	}
+
+
+/*
+	
+	SKILLS
+*/
+	
+	
+#skills {
+	
+	grid-row: 3/4;
+	flex-direction: column;
+	
+}
+	
+#skills h3 {
+	
+	background: #c7e1ce;
+	 border-right: 1px solid white;
+	 color: #fff;
+	 text-transform: uppercase;
+ font-size: 12px;
+	width: 100px;
+	 padding: 1em 2em;
+	margin-right: 20px;
+	margin-left: 50px;
+	writing-mode: horizontal-tb;
+	
+}
+
+.column-1,
+.column-2 {
+	
+	margin: 20px;
+	
+}
+.container-skills {
+	
+	
+	display:grid;
+	
+grid-template-rows: 800px;
+	margin: 0;
+	padding: 0;
+}
     
 
+
+/*FACTS*/
+	
 .add {
 	
-	display: flex;
-	flex-direction: column;
+	
+	justify-content:flex-start;
+	margin-bottom: 100px ;
+
 }
+
+
 .add .interests {
 	
-	align-self: flex-end;
+	align-self: ;
 	margin-right: 50px;
 }
+
+/*BOXEX in facts*/
+.boxex ul {
+	
+	justify-content: flex-start;
+margin-top:   0px;
+
+}
+
+
+
+
+
+/*	SLIDER*/
+	
 .wrap-slider {
-	margin-top: 600px;
+	margin-top: 50px;
+	margin: 50px 300px;
+	
+	
+	width: 600px;
+	
 	
 	
 }
 
+/*FOOTER*/
 
+footer {
+	
+	
+	
+}
+
+footer ul{
+	
+	justify-content: center;
+
+}
+
+
+@media (max-width: 768px) {
+	
+	
+	body {
+		
+		
+		grid-template-rows: 200px auto auto auto auto 100px ; 
+	}
+	
+
+	.wrap-slider {
+		
+		width: 500px;
+		margin-left: 10px;
+	}
+	
+	.wrap-slider h2 {
+		
+		position: absolute;
+		bottom:-90px;
+		left: 20px;
+	}
+	
+	.boxex img {
+	width: 20px;
+		padding: 10px;
+
+}
+	.box {
+	padding: 0px;
+		
+}
+
+	.wrapper-about {
+
+	display: grid;
+	grid-template-columns: 512px ;
+	grid-template-rows: 120px auto auto auto auto;
+	grid-gap: 20px;
+	grid-template-areas:
+		"box-1"
+		"box-2"
+	"box-4  box-4"
+	
+}
+
+	
+	
+
+
+.wrapper-about .contacts {
+	
+	margin: 15px;
+	grid-area: box-2;
+	
+	
+}
+.wrapper-about .dowload {
+	
+		grid-area: box-1;
+}
+	
+
+
+	
+
+.wrapper-about .about-text {
+	grid-area:box-4;
+	
+
+}
+	
+		
+/*	MENU*/
+	
+nav li {
+	
+	display: flex;
+   flex-direction: column;
+}
+
+nav a {
+	max-width:150px;
+	
+}
+nav li {
+	
+	margin: 5px;
+	max-width:150px;
+}
+nav li:last-child {
+	border-bottom:none;
+}
+    nav label{
+		margin: 20px ;
+         display: inline-block;
+		
+    }
+    nav > ul {
+		margin: auto;
+        display: none;
+		background: linear-gradient(45deg, #EECFBA, #c7e1ce);
+    }
+    input[type="checkbox"]:checked ~ label + ul {
+        display: block;
+		
+    }
+	
+	footer ul{
+	
+	justify-content: flex-start;
+
+}
+
+}
 	
