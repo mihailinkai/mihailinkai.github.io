@@ -340,9 +340,9 @@ width: 600px;
 	animation: animate 3s 1;
 }
 
-.grids {
+.node {
 
-	width: 80%;
+	width: 30%;
 	background-color: #c7e1ce;
 	animation: animate 3s 1;
 }

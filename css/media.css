@@ -216,7 +216,7 @@
 
 	.wrapper-about {
 		grid-template-columns: 100%;
-		grid-template-rows: 25% 5% auto;
+		grid-template-rows: 25% 3% auto;
 		grid-gap: 0px;
 		grid-template-areas:
 			"box-1"
@@ -306,6 +306,7 @@
 		font-size: 5vw;
 	}
 
+	
 	/*facts's boxex*/
 
 	.boxex {
